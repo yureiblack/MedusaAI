@@ -87,6 +87,80 @@ UI Display
 - matplotlib
 - seaborn
 
+## 🛠️ Project Setup (Local Development)
 
+This project uses a Python virtual environment to manage dependencies.  
+Follow the steps below to set up the project on your local machine.
 
+---
 
+### 📌 Prerequisites
+
+Make sure you have the following installed:
+- Python 3.9 or higher
+- pip3
+- Git
+- VS Code (recommended)
+
+Check versions:
+```bash
+python3 --version
+pip3 --version
+git --version
+
+## 📂 Clone the Repository
+
+Clone the project repository and navigate into it:
+
+```bash
+git clone https://github.com/<your-username>/MedusaAI.git
+cd MedusaAI
+
+## 🛠️ Create Virtual Environment
+Create a virtual environment to manage dependencies:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+## 📦 Install Dependencies
+Install the required Python packages:
+
+Upgrade pip:
+```bash
+pip install --upgrade pip
+```
+
+```bash
+pip install -r requirements.txt
+```
+
+## 🧠 Download NLP Resources
+Download spaCy's English language model:
+```bash
+python3 -m spacy download en_core_web_sm
+```
+
+NLTK Datasets:
+
+Open the Python shell:
+```bash
+python3
+```
+Then run:
+```bash
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+exit()
+```
+
+## ▶️ Run a Sample Script
+Verify that the setup is working correctly:
+```bash
+python3 src/sample_run.py
+```
+
+Expected output:
+All imports working!
